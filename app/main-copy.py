@@ -26,7 +26,7 @@ def home():
         result = patient.predict()
         ans = ''
         if result == 1:
-            ans = "You are at risk of having heart diease"
+            ans = "You are at risk of having heart disease"
         else:
             ans = "You do not have to worry about heart disease"
         return render_template('index.html', var = ans)
@@ -35,7 +35,8 @@ def home():
 
 if __name__ == '__main__':
     # IMPORTANT: change url to the site where you are editing this file.
-    website_url = 'cocalc21.ai-camp.dev/'
+    #website_url = 'cocalc21.ai-camp.dev/'
+    website_url = 'http://127.0.0.1:5000/'
     
     print(f'Try to open\n\n    https://{website_url}' + base_url + '\n\n')
     app.run(host = '0.0.0.0', port=port, debug=True)
