@@ -29,9 +29,9 @@ def home():
             ans = "You are at risk of having heart disease"
         else:
             ans = "You do not have to worry about heart disease"
-        return render_template('index.html', var = ans)
+        return render_template('index_final.html', var = ans)
     else:
-        return render_template('index.html')
+        return render_template('index_final.html')
 
 if __name__ == '__main__':
     # IMPORTANT: change url to the site where you are editing this file.
